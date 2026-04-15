@@ -50,40 +50,40 @@ export default async function ProjectPage({ params }: Props) {
 
       {/* Header */}
       <header className="space-y-4">
-        <h1 className="text-4xl font-bold tracking-tight">{project.title}</h1>
-        <p className="text-lg text-muted-foreground leading-relaxed">
-          {project.description}
-        </p>
+          <h1 className="text-4xl font-bold tracking-tight">{project.title}</h1>
+          <p className="text-lg text-muted-foreground leading-relaxed">
+            {project.description}
+          </p>
 
-        <div className="flex flex-wrap gap-1.5">
-          {project.tags.map((tag) => (
-            <span
-              key={tag}
-              className="inline-flex items-center rounded-md bg-secondary px-2 py-0.5 text-xs text-muted-foreground"
-            >
-              {tag}
-            </span>
-          ))}
-        </div>
+          <div className="flex flex-wrap gap-1.5">
+            {project.tags.map((tag) => (
+              <span
+                key={tag}
+                className="inline-flex items-center rounded-md bg-secondary px-2 py-0.5 text-xs text-muted-foreground"
+              >
+                {tag}
+              </span>
+            ))}
+          </div>
 
-        <div className="flex flex-wrap items-center gap-3 pt-1">
-          {project.demoUrl && (
-            <Button asChild size="sm" className="rounded-full gap-1.5">
-              <a href={project.demoUrl} target="_blank" rel="noopener noreferrer">
-                <ExternalLink className="h-3.5 w-3.5" />
-                Live Demo
-              </a>
-            </Button>
-          )}
-          {project.repoUrl && (
-            <Button asChild size="sm" variant="outline" className="rounded-full gap-1.5">
-              <a href={project.repoUrl} target="_blank" rel="noopener noreferrer">
-                <GitFork className="h-3.5 w-3.5" />
-                Source Code
-              </a>
-            </Button>
-          )}
-        </div>
+          <div className="flex flex-wrap items-center gap-3 pt-1">
+            {project.demoUrl && (
+              <Button asChild size="sm" className="rounded-full gap-1.5">
+                <a href={project.demoUrl} target="_blank" rel="noopener noreferrer">
+                  <ExternalLink className="h-3.5 w-3.5" />
+                  Live Demo
+                </a>
+              </Button>
+            )}
+            {project.repoUrl && (
+              <Button asChild size="sm" variant="outline" className="rounded-full gap-1.5">
+                <a href={project.repoUrl} target="_blank" rel="noopener noreferrer">
+                  <GitFork className="h-3.5 w-3.5" />
+                  Source Code
+                </a>
+              </Button>
+            )}
+          </div>
       </header>
 
       <hr className="border-border" />
