@@ -3,7 +3,7 @@ import { ProjectCard } from "@/components/project-card"
 import { getAllProjects } from "@/lib/projects"
 
 export const metadata: Metadata = {
-  title: "Projects — Norbi.dev",
+  title: "Projects — Kralik.dev",
   description:
     "Things I've designed, built, and shipped — open-source tools, SaaS products, and experimental ideas.",
 }
