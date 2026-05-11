@@ -16,9 +16,9 @@ const geistMono = Geist_Mono({
 })
 
 export const metadata: Metadata = {
-  title: "Kralik.dev — Full-stack developer",
+  title: "Kralik.dev — Finance Automation with Power Platform",
   description:
-    "Full-stack developer specialising in React and Node.js. I craft performant, accessible, and beautifully designed digital products.",
+    "I build Power Platform tools for finance and back-office workflows, combining accounting experience with Power Apps, Power Automate, and Power BI.",
 }
 
 export default function RootLayout({
@@ -32,16 +32,18 @@ export default function RootLayout({
       className={`${geistSans.variable} ${geistMono.variable}`}
       suppressHydrationWarning
     >
-      <body className="min-h-screen flex flex-col antialiased">
+      <body className="antialiased">
         <ThemeProvider
           attribute="class"
           defaultTheme="dark"
           enableSystem
           disableTransitionOnChange
         >
-          <SiteHeader />
-          <main className="flex-1">{children}</main>
-          <SiteFooter />
+          <div className="flex min-h-screen flex-col">
+            <SiteHeader />
+            <main className="flex-1">{children}</main>
+            <SiteFooter />
+          </div>
         </ThemeProvider>
       </body>
     </html>

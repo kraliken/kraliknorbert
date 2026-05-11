@@ -8,7 +8,7 @@ type ProjectCardProps = {
 
 export function ProjectCard({ project }: ProjectCardProps) {
   return (
-    <div className="group flex flex-col rounded-xl border border-border bg-card p-6 transition-all hover:border-border/80 hover:bg-card/80 hover:-translate-y-1 hover:shadow-lg">
+    <div className="group flex h-full flex-col rounded-xl border border-border bg-card p-6 transition-all hover:border-border/80 hover:bg-card/80 hover:-translate-y-1 hover:shadow-lg">
       <div className="flex-1 space-y-3">
         <h3 className="font-semibold tracking-tight text-foreground">
           {project.title}

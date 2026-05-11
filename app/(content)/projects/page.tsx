@@ -6,7 +6,7 @@ import { getAllProjects } from "@/lib/projects"
 export const metadata: Metadata = {
   title: "Projects — Kralik.dev",
   description:
-    "Things I've designed, built, and shipped — open-source tools, SaaS products, and experimental ideas.",
+    "Power Platform case studies for finance and back-office workflows — built with Power Apps, Power Automate, and Power BI.",
 }
 
 export default function ProjectsPage() {
@@ -16,12 +16,12 @@ export default function ProjectsPage() {
     <div className="mx-auto w-full max-w-5xl px-6 py-20 space-y-10">
       <FadeUp className="space-y-2">
         <p className="text-xs font-medium uppercase tracking-widest text-primary">
-          work
+          selected work
         </p>
-        <h1 className="text-4xl font-bold tracking-tight">Projects</h1>
-        <p className="max-w-xl text-muted-foreground">
-          Things I&apos;ve designed, built, and shipped — open-source tools,
-          SaaS products, and experimental ideas.
+        <h1 className="text-4xl font-semibold tracking-tight">Projects</h1>
+        <p className="max-w-xl text-foreground/60">
+          Power Platform projects focused on finance and back-office workflows
+          — approvals, reconciliation, and reporting.
         </p>
       </FadeUp>
 

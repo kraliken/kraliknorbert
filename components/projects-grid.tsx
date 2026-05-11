@@ -29,7 +29,7 @@ export function ProjectsGrid({ projects, className }: ProjectsGridProps) {
       className={className ?? "grid gap-4 sm:grid-cols-2 lg:grid-cols-3"}
     >
       {projects.map((project) => (
-        <motion.div key={project.slug} variants={item}>
+        <motion.div key={project.slug} variants={item} className="h-full">
           <ProjectCard project={project} />
         </motion.div>
       ))}
