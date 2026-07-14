@@ -127,7 +127,7 @@
   }
   html {
     @apply font-sans;
-    overflow-y: auto;
+    scrollbar-gutter: stable;
     scrollbar-width: thin;
     scrollbar-color: oklch(0.3 0 0) transparent;
   }
