@@ -13,7 +13,7 @@ export default function LearningPage() {
   const learning = getAllLearning()
 
   return (
-    <div className="mx-auto w-full max-w-5xl px-6 py-20 space-y-10">
+    <div className="mx-auto w-full max-w-5xl px-6 py-12 space-y-6">
       <FadeUp className="space-y-2">
         <p className="text-xs font-medium uppercase tracking-widest text-primary">
           learning journey
