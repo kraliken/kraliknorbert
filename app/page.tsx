@@ -4,8 +4,7 @@ import { FadeIn } from "@/components/fade-in"
 
 export default function HomePage() {
   return (
-    <div className="flex flex-col min-h-screen">
-      <div className="mx-auto w-full max-w-5xl px-6 flex-1 flex flex-col items-center justify-center">
+    <div className="mx-auto w-full max-w-5xl px-6 h-[calc(100vh-140px)] flex flex-col items-center justify-center">
         {/* Hero */}
         <section className="text-center space-y-6 w-full">
           <FadeIn delay={0.6} className="space-y-5">
@@ -37,7 +36,6 @@ export default function HomePage() {
             </div>
           </FadeIn>
         </section>
-      </div>
     </div>
   )
 }
