@@ -1,15 +1,10 @@
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { FadeIn } from "@/components/fade-in"
-import { FadeUp } from "@/components/fade-up"
-import { LearningGrid } from "@/components/learning-grid"
-import { getCurrentlyLearning } from "@/lib/learning"
 
-export default async function HomePage() {
-  const currentlyLearning = await Promise.resolve(getCurrentlyLearning())
-
+export default function HomePage() {
   return (
-    <div className="mx-auto w-full max-w-5xl px-6 py-16 space-y-24">
+    <div className="mx-auto w-full max-w-5xl px-6 py-16">
       {/* Hero */}
       <section className="text-center space-y-6">
         <FadeIn delay={0.6} className="space-y-5">
@@ -43,27 +38,6 @@ export default async function HomePage() {
           </div>
         </FadeIn>
       </section>
-
-      {/* Currently Learning */}
-      {currentlyLearning.length > 0 && (
-        <section className="space-y-6">
-          <FadeUp className="space-y-2">
-            <h2 className="text-2xl font-semibold tracking-tight">Currently learning</h2>
-            <p className="text-foreground/60">
-              My active courses and progress so far.
-            </p>
-          </FadeUp>
-          <LearningGrid
-            learning={currentlyLearning}
-            className="grid gap-4 sm:grid-cols-2"
-          />
-          <div className="text-center pt-2">
-            <Link href="/learning" className="text-sm font-medium text-primary hover:text-primary/80">
-              View all courses →
-            </Link>
-          </div>
-        </section>
-      )}
     </div>
   )
 }
