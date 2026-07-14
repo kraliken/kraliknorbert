@@ -13,6 +13,4 @@ startDate: "2026-07-14"
 featured: true
 ---
 
-I'm starting this course to build a solid, structured foundation in Power BI — going beyond building dashboards by trial and error, toward actually understanding data modeling and DAX the way a BI analyst would. My background is in accounting, so I already think in terms of ledgers, reconciliations, and reports; this course should give me the tool-specific skills to turn that domain knowledge into real BI deliverables.
-
-The course is structured in four stages: connecting and shaping data, building a relational data model, adding calculated fields with DAX, and visualizing data with reports. I'll add a section below as I complete each one, with what I actually learned and where I got stuck.
+I've started this course to build a structured foundation in Power BI and connect my accounting and automation experience with practical BI skills. I'm currently working through the first module, and I'll add notes and project updates as I progress.
