@@ -16,9 +16,7 @@ export default function HomePage() {
           </h1>
 
           <p className="text-base leading-relaxed text-foreground/60 mx-auto max-w-2xl">
-            Accounting background. I&apos;m building Data Analytics and Business Intelligence skills
-            in public — Power BI, SQL, Tableau, Python, and more. Each course shows what I&apos;ve
-            actually learned and understood.
+            Building BI and data skills in public — Power BI, SQL, Tableau, Python, and more.
           </p>
 
           <div className="flex flex-wrap items-center justify-center gap-3">

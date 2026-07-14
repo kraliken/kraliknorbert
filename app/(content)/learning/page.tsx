@@ -20,8 +20,7 @@ export default function LearningPage() {
         </p>
         <h1 className="text-4xl font-semibold tracking-tight">Learning</h1>
         <p className="max-w-xl text-foreground/60">
-          An accountant learning data and business intelligence in public — course by course,
-          stage by stage. Only what I&apos;ve actually completed and understood is shown here.
+          My learning journey — course by course, stage by stage. Only completed, understood work shown.
         </p>
       </FadeUp>
 
