@@ -13,11 +13,6 @@ export default async function HomePage() {
       {/* Hero */}
       <section className="text-center space-y-6">
         <FadeIn delay={0.6} className="space-y-5">
-          <div className="inline-flex items-center gap-2 rounded-full border border-primary/30 bg-primary/10 px-3 py-1 text-xs font-medium text-primary">
-            <span className="h-1.5 w-1.5 rounded-full bg-primary animate-pulse" />
-            Career changer, in public
-          </div>
-
           <h1 className="text-4xl font-semibold tracking-tight leading-tight sm:text-5xl mx-auto max-w-2xl">
             Hi, I&apos;m{" "}
             <span className="text-primary">Norbert.</span>
