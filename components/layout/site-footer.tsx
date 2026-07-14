@@ -1,8 +1,7 @@
 import Link from "next/link"
 
 const socialLinks = [
-  { href: "https://github.com/norbi", label: "GitHub" },
-  { href: "https://linkedin.com/in/norbi", label: "LinkedIn" },
+  { href: "https://www.linkedin.com/in/norbertkralik", label: "LinkedIn" },
 ]
 
 export function SiteFooter() {
