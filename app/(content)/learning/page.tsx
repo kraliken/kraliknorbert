@@ -25,7 +25,7 @@ export default function LearningPage() {
         </p>
       </FadeUp>
 
-      <LearningGrid learning={learning} className="grid gap-4" />
+      <LearningGrid learning={learning} className="grid gap-4 md:grid-cols-2" />
     </div>
   )
 }
