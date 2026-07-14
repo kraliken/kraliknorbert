@@ -16,7 +16,7 @@ export default function HomePage() {
             </h1>
 
             <p className="text-base leading-relaxed text-foreground/60 mx-auto max-w-2xl">
-              Learning Power BI and data analytics, and documenting the journey along the way.
+              Learning Power BI and data analytics while documenting my progress.
             </p>
 
             <div className="flex flex-wrap items-center justify-center gap-3">
