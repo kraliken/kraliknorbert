@@ -15,10 +15,7 @@ export default function LearningPage() {
   return (
     <div className="mx-auto w-full max-w-5xl px-6 py-8 space-y-4">
       <FadeUp className="space-y-2">
-        <p className="text-xs font-medium uppercase tracking-widest text-primary">
-          learning journey
-        </p>
-        <h1 className="text-4xl font-semibold tracking-tight">Learning</h1>
+        <h1 className="text-4xl font-semibold tracking-tight">My Learning</h1>
         <p className="max-w-xl text-foreground/60">
           My learning journey — course by course, stage by stage. Only completed, understood work shown.
         </p>
