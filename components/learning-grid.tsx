@@ -1,8 +1,8 @@
 "use client"
 
 import { motion } from "framer-motion"
-import { ProjectCard } from "@/components/project-card"
-import type { Project } from "@/types/project"
+import { LearningCard } from "@/components/learning-card"
+import type { Learning } from "@/types/learning"
 
 const container = {
   hidden: {},
@@ -14,12 +14,12 @@ const item = {
   show: { opacity: 1, y: 0, transition: { duration: 0.45, ease: "easeOut" as const } },
 }
 
-type ProjectsGridProps = {
-  projects: Project[]
+type LearningGridProps = {
+  learning: Learning[]
   className?: string
 }
 
-export function ProjectsGrid({ projects, className }: ProjectsGridProps) {
+export function LearningGrid({ learning, className }: LearningGridProps) {
   return (
     <motion.div
       variants={container}
@@ -28,9 +28,9 @@ export function ProjectsGrid({ projects, className }: ProjectsGridProps) {
       viewport={{ once: true, margin: "-60px" }}
       className={className ?? "grid gap-4 sm:grid-cols-2 lg:grid-cols-3"}
     >
-      {projects.map((project) => (
-        <motion.div key={project.slug} variants={item} className="h-full">
-          <ProjectCard project={project} />
+      {learning.map((learningItem) => (
+        <motion.div key={learningItem.slug} variants={item} className="h-full">
+          <LearningCard learning={learningItem} />
         </motion.div>
       ))}
     </motion.div>

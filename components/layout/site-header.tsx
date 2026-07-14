@@ -6,7 +6,7 @@ import { cn } from "@/lib/utils"
 
 const navLinks = [
   { href: "/", label: "Home" },
-  { href: "/projects", label: "Projects" },
+  { href: "/learning", label: "Learning" },
 ]
 
 export function SiteHeader() {

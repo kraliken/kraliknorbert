@@ -16,9 +16,9 @@ const geistMono = Geist_Mono({
 })
 
 export const metadata: Metadata = {
-  title: "Kralik.dev — Finance Automation with Power Platform",
+  title: "Kralik.dev — Learning Data & BI in Public",
   description:
-    "I build Power Platform tools for finance and back-office workflows, combining accounting experience with Power Apps, Power Automate, and Power BI.",
+    "An accountant's public journey into Data Analytics and BI -- Power BI, SQL, Tableau, Python, and Power Platform, documented course by course.",
 }
 
 export default function RootLayout({
