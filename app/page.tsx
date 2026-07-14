@@ -29,7 +29,7 @@ export default function HomePage() {
                 variant="outline"
                 className="rounded-full px-6"
               >
-                <Link href="mailto:norbert.kralik.dev@gmail.com">
+                <Link href="/contact">
                   Get In Touch
                 </Link>
               </Button>
