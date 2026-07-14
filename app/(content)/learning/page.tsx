@@ -15,7 +15,7 @@ export default function LearningPage() {
   return (
     <div className="mx-auto w-full max-w-5xl px-6 py-8 space-y-4">
       <FadeUp className="space-y-2">
-        <h1 className="text-4xl font-semibold tracking-tight">Courses</h1>
+        <h1 className="text-4xl font-semibold tracking-tight">Learning Journey</h1>
         <p className="max-w-xl text-foreground/60">
           Course by course, stage by stage. Only completed work shown.
         </p>
