@@ -17,7 +17,7 @@ export default function LearningPage() {
       <FadeUp className="space-y-2">
         <h1 className="text-4xl font-semibold tracking-tight">Learning Journey</h1>
         <p className="max-w-xl text-foreground/60">
-          Course by course, stage by stage. Only completed work shown.
+          Documenting my progress in data analytics and BI, one step at a time.
         </p>
       </FadeUp>
 
