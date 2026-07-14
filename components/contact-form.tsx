@@ -15,7 +15,7 @@ export function ContactForm() {
   const [state, formAction, isPending] = useActionState(sendContactMessage, initialState)
 
   return (
-    <form action={formAction} className="space-y-6 max-w-2xl">
+    <form action={formAction} className="space-y-6 rounded-2xl border border-border/50 bg-muted/20 p-7 sm:p-8">
       {/* Name */}
       <div className="space-y-2">
         <Label htmlFor="name">Name</Label>
@@ -48,8 +48,8 @@ export function ContactForm() {
         <Textarea
           id="message"
           name="message"
-          placeholder="Your message..."
-          rows={6}
+          placeholder="Tell me a little about what you'd like to discuss..."
+          rows={8}
           required
           disabled={isPending}
         />
@@ -78,8 +78,8 @@ export function ContactForm() {
       )}
 
       {/* Submit button */}
-      <Button type="submit" disabled={isPending} className="w-full sm:w-auto">
-        {isPending ? "Sending..." : "Send Message"}
+      <Button type="submit" disabled={isPending} className="rounded-full px-6">
+        {isPending ? "Sending..." : "Send Message →"}
       </Button>
     </form>
   )

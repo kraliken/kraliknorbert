@@ -2,10 +2,10 @@
 
 import Link from "next/link"
 import { usePathname } from "next/navigation"
+import { FaLinkedin } from "react-icons/fa"
 import { cn } from "@/lib/utils"
 
 const navLinks = [
-  { href: "/", label: "Home" },
   { href: "/learning", label: "Learning" },
   { href: "/contact", label: "Contact" },
 ]
@@ -38,6 +38,17 @@ export function SiteHeader() {
               </Link>
             )
           })}
+
+          {/* LinkedIn icon */}
+          <a
+            href="https://www.linkedin.com/in/norbertkralik"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="ml-2 rounded-md p-1.5 text-muted-foreground transition-colors hover:text-foreground"
+            aria-label="LinkedIn profile"
+          >
+            <FaLinkedin className="h-5 w-5" />
+          </a>
         </nav>
       </div>
     </header>
