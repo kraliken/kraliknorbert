@@ -12,11 +12,11 @@ export default function HomePage() {
               Hi, I&apos;m{" "}
               <span className="text-primary">Norbert.</span>
               <br />
-              Learning data &amp; BI.
+              From finance to data &amp; BI.
             </h1>
 
             <p className="text-base leading-relaxed text-foreground/60 mx-auto max-w-2xl">
-              Building BI and data skills in public.
+              Learning Power BI and data analytics, and documenting the journey along the way.
             </p>
 
             <div className="flex flex-wrap items-center justify-center gap-3">
