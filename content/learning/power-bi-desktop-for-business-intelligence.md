@@ -13,4 +13,4 @@ startDate: "2026-07-14"
 featured: true
 ---
 
-I've started this course to build a structured foundation in Power BI and connect my accounting and automation experience with practical BI skills. I'm currently working through the first module, and I'll add notes and project updates as I progress.
+I started this course to build a solid foundation in Power BI and develop practical BI skills. I'm currently working through the first module, and I'll continue updating this page as I progress.
