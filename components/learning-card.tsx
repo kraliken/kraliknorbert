@@ -50,7 +50,7 @@ export function LearningCard({ learning }: LearningCardProps) {
         />
 
         <div className="flex flex-wrap gap-1.5 pt-1">
-          {learning.tags.slice(0, 3).map((tag) => (
+          {learning.tags.map((tag) => (
             <span
               key={tag}
               className="inline-flex items-center rounded-md bg-secondary px-2 py-0.5 text-xs text-muted-foreground"
@@ -58,9 +58,6 @@ export function LearningCard({ learning }: LearningCardProps) {
               {tag}
             </span>
           ))}
-          {learning.tags.length > 3 && (
-            <span className="text-xs text-muted-foreground">+{learning.tags.length - 3}</span>
-          )}
         </div>
       </div>
 
