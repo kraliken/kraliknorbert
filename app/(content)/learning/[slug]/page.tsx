@@ -5,7 +5,9 @@ import { ArrowLeft, ExternalLink } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { MarkdownRenderer } from "@/components/markdown-renderer"
 import { ProgressBar } from "@/components/progress-bar"
+import { TableOfContents } from "@/components/table-of-contents"
 import { getAllLearning, getLearningBySlug } from "@/lib/learning"
+import { extractHeadings } from "@/lib/markdown-utils"
 
 type Props = {
   params: Promise<{ slug: string }>
@@ -71,6 +73,9 @@ export default async function LearningPage({ params }: Props) {
       </header>
 
       {/* <hr className="border-border" /> */}
+
+      {/* Table of Contents */}
+      <TableOfContents headings={extractHeadings(learning.content)} />
 
       {/* Markdown body */}
       <MarkdownRenderer content={learning.content} />
