@@ -60,17 +60,17 @@ export default async function LearningPage({ params }: Props) {
 
         <ProgressBar completed={learning.completedModules} total={learning.totalModules} />
 
-        {learning.courseUrl && (
+        {/* {learning.courseUrl && (
           <Button asChild size="sm" className="rounded-full gap-1.5">
             <a href={learning.courseUrl} target="_blank" rel="noopener noreferrer">
               <ExternalLink className="h-3.5 w-3.5" />
               View on {learning.provider || "course platform"}
             </a>
           </Button>
-        )}
+        )} */}
       </header>
 
-      <hr className="border-border" />
+      {/* <hr className="border-border" /> */}
 
       {/* Markdown body */}
       <MarkdownRenderer content={learning.content} />
