@@ -31,15 +31,23 @@ In this section, I began the first phase of the AdventureWorks BI workflow by us
 
 ### Connecting to Data Sources
 
-- **Storage & Connection Modes** — 
-- **Connecting to a Database** — 
-- **Extracting Data from the Web** — 
+- **Storage & Connection Modes** — I examined how Import, DirectQuery, and Composite modes handle data differently and how the selected mode affects performance, data freshness, model flexibility, and resource usage. For the AdventureWorks project, I use Import mode because the course data is loaded into Power BI and queried from memory.
 
-### Data Profiling
+  **Semantic model modes**
 
-- **Column Quality** — 
-- **Column Distribution** — 
-- **Column Profile** — 
+  - **Import** — Data is loaded into the Power BI model and queried from memory, providing fast performance and full support for Power Query and DAX. However, the model consumes memory, and its data is only as current as the latest refresh.
+
+  - **DirectQuery** — Data remains in the source system, and Power BI sends queries to the source when users interact with a report. This mode can support large datasets and near real-time reporting, but performance depends on the source, and some Power Query and DAX features are restricted.
+
+  - **Composite** — A single model can combine Import and DirectQuery tables, allowing the storage mode to be configured separately for each table. This can combine the performance of in-memory data with access to frequently changing source data.
+
+- **Connecting to a Database** — I learned how to connect Power BI to a MySQL database through Get Data, authenticate the connection, select tables, and open them in the Power Query Editor. In the demo, I disabled Enable Load so the queries remained available in Power Query without being loaded into the data model.
+
+- **Extracting Data from the Web** — I used the Web connector to scan a Wikipedia page for structured tables, previewed the available results, and imported a selected table into the Power Query Editor for validation and transformation.
+
+### Data QA & Profiling Tools
+
+- **Data Profiling** — I used Column quality, Column distribution, and Column profile to examine valid, error, and empty values, data distributions, and column statistics. In the Customer Lookup query, I switched profiling from the default 1,000 rows to the entire dataset, investigated the causes of the errors, and removed error and empty rows. 
 
 ### Transforming and Shaping Data
 
